@@ -17,7 +17,6 @@
 			"extensions": [
 				"mongodb.mongodb-vscode",
 				"bradlc.vscode-tailwindcss",
-				"rangav.vscode-thunder-client",
 				"zignd.html-css-class-completion",
 				"esbenp.prettier-vscode",
 				"ritwickdey.liveserver"
