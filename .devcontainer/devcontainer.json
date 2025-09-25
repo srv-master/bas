@@ -19,7 +19,8 @@
 				"bradlc.vscode-tailwindcss",
 				"zignd.html-css-class-completion",
 				"esbenp.prettier-vscode",
-				"ritwickdey.liveserver"
+				"ritwickdey.liveserver",
+				"humao.rest-client"
 			]
 		}
 	}
