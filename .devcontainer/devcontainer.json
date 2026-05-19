@@ -1,0 +1,15 @@
+{
+  "name": "Webbserver 1",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "humao.rest-client",
+        "mongodb.mongodb-vscode"
+      ]
+    }
+  }
+}

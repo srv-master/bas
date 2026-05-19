@@ -1,20 +1,24 @@
-import js from "@eslint/js";
-import globals from "globals";
-
-export default [
-  js.configs.recommended,
+module.exports = [
   {
+    files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
     languageOptions: {
       ecmaVersion: "latest",
-      sourceType: "module", // eller "commonjs" om ni använder require() istället for import
+      sourceType: "commonjs",
+      // Vi hårdkodar in de viktigaste globala variablerna för Node/Express
+      // så slipper vi vara beroende av externa npm-paket i detta steg!
       globals: {
-        ...globals.node,   // Säger till ESLint att "process", "require" etc. är okej
-        ...globals.express // Säger till ESLint att Express-specifika saker är okej
-      }
+        console: "readonly",
+        process: "readonly",
+        require: "readonly",
+        module: "readonly",
+        __dirname: "readonly",
+        express: "readonly",
+      },
     },
     rules: {
-      "no-unused-vars": "warn", // Varnar om de skapar variabler de inte använder
-      "no-console": "off"       // Tillåter console.log (vilket elever använder mycket!)
-    }
-  }
+      "no-undef": "error", // Rödmarkera consoll.log och okända variabler
+      "no-const-assign": "error", // Rödmarkera x = 3 (överskrivning av const)
+      "no-unused-vars": "warn", // Gulmarkera variabler som glömts bort
+    },
+  },
 ];

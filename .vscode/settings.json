@@ -1,12 +1,10 @@
 {
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "chat.disableAIFeatures": true,
   "editor.tabSize": 2,
   "editor.fontSize": 16,
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.shell.linux": "bash",
-  "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "git.confirmSync": false,
   "git.autofetch": true,
   "git.enableSmartCommit": true,
