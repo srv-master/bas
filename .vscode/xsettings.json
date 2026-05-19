@@ -31,4 +31,5 @@
   "window.menuBarVisibility": "classic",
   "workbench.editor.empty.hint": "hidden",
   "workbench.colorTheme": "Dark Modern"
+  // "eslint.runtime": "node"
 }
