@@ -3,6 +3,6 @@ console.log("utskrift från konsolen");
 
 // eslint hittar fel
 let a = 1;
-const b = 3;
+const b = 2;
 b = 4;
 consol.log("feeel");

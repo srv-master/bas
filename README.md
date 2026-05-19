@@ -8,6 +8,9 @@ Välkommen till webbserverprogrammering. Detta är ditt repo som vi jobber med i
 
 De här filerna finns med som standard i repot och ska inte röras av dig.
 
+**package.json**  
+Inställningsfil för npm och pakethantering. Du kommer göra dina egna i undermapparna! Denna behövs för att få eslint att lira som det ska.
+
 **eslint.config.js**  
 Regelboken för projektets kodkvalitet. Den talar om för ESLint-verktyget vilka kodregler som gäller (t.ex. att projektet körs i Node.js). Det är tack vare den här filen som VS Code vet exakt när den ska rödmarkera ett fel eller varna för en oanvänd variabel.
 
