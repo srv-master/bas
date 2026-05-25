@@ -2,7 +2,8 @@
 console.log("utskrift från konsolen");
 
 // eslint hittar fel
+// Det bör vara uppmarkerat 1 orange och 2 röda fel nedan
 let a = 1;
 const b = 2;
 b = 4;
-consol.log("feeel");
+consoll.log("feeel");
